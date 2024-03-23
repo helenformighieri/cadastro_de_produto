@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import './App.css';
 
@@ -38,7 +37,7 @@ function App() {
           <tr>
             <th>Nome</th>
             <th>Valor</th>
-            <th>Disponível para venda</th> {/* Nova coluna */}
+            <th>Disponível para venda</th> {}
           </tr>
         </thead>
         <tbody>
@@ -46,7 +45,7 @@ function App() {
             <tr key={index}>
               <td>{product.name}</td>
               <td>{product.price}</td>
-              <td>{product.available === 'yes' ? 'Sim' : 'Não'}</td> {/* Nova célula */}
+              <td>{product.available === 'yes' ? 'Sim' : 'Não'}</td> {}
             </tr>
           ))}
         </tbody>
